@@ -20,4 +20,8 @@ mongoose
 
 app.use("/api", routes);
 
+app.get("/", (req, res)=>{
+  res.send("Deployed Successfully");
+})
+
 app.listen(PORT, () => console.log(`Listening at ${PORT}...`));
